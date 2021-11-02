@@ -15,10 +15,10 @@ const port = process.env.PORT || 8080
 
 app.use(requireHTTPS);
 //nama app mengikuti nama package.json
-app.use(express.static('./dist/testing'));
+app.use(express.static('./dist/Testing'));
 
 app.get('/*',(req, res) =>
-    res.sendFile('index.html', {root: 'dist/testing'}),
+    res.sendFile('index.html', {root: 'dist/Testing'}),
 );
 
 app.listen(port, () =>{
